@@ -15,8 +15,11 @@
  */
 // write your code here
 
+func countryCount(continent: String, countryCnt: Int) {
+    print("\(continent) is a continent which contains \(countryCnt) countries.")
+}
 
-
+countryCount("North America", countryCnt: 23)
 
 /*: question2
  ### 2. Can you see why the code below doesn't work? Fix the function call to get rid of the error.
@@ -25,7 +28,7 @@ func greeting(name: String, greeting: String) {
     print("\(greeting), \(name)!")
 }
 
-greeting("Danny", "Hello")
+greeting("Danny", greeting:"Hello")
 
 
 
@@ -37,9 +40,15 @@ func daysInMonth(month: String, days: String) {
     print("There are \(days) in \(month)")
 }
 
+daysInMonth("November", days: "30")
+
+// Or:
+
+func daysInMonth(month: String, days: Int) {
+    print("There are \(days) in \(month)")
+}
+
 daysInMonth("November", days: 30)
-
-
 
 
 /*: question4
@@ -47,7 +56,11 @@ daysInMonth("November", days: 30)
  */
 // write your code here
 
+func drinkingSong(drink: String, drinkQty: Int, location: String){
+    print("\(drinkQty) bottles of \(drink) on the \(location)")
+}
 
+drinkingSong("beer",drinkQty: 99, location: "the wall")
 
 
 /*:
